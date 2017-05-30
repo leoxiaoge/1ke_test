@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/mian.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+</head>
+<body>
+<section id="fullpage">
+    <section class="section page1 all">
+        <img src="images/logo.png" alt="">
+        <h1 class="wow pulse">2016年成人学历报考查询</h1>
+        <h2>自考 | 成人高考 | 远程教育</h2>
+        <ul>
+            <li><a class="a1" href="#">报名时间</a></li>
+            <li><a class="a2" href="#">报名流程</a></li>
+            <li><a class="a3" href="#">考试科目</a></li>
+            <li><a class="a4" href="#">如何缴费</a></li>
+        </ul>
+        <div class="btn">
+            <a class="a5" href="#">新版报考资讯</a>
+        </div>
+    </section>
+    <section class="section page2 all">
+        <h3>2016年学历报考考试时间（一览表）</h3>
+        <h2>自考 | 成人高考 | 远程教育</h2>
+        <ul>
+            <li><a href="#">四川省高等教育自学考试 8月报名开始</a></li>
+            <li><a href="#">四川省成人高考 8月报名开始</a></li>
+            <li><a href="#">成都市成人函授教育 8月报名开始</a></li>
+        </ul>
+        <div class="btn">
+            <a href="#">点击查询</a>
+        </div>
+        <p>*10月9截止报名*</p>
+    </section>
+    <section class="section page3 all">
+        <h1>2016年成人学历考试解析</h1>
+        <ul>
+            <li>
+                <a href="#">高等教育自学考试:科目学分制。选<br>择题、填空题、简答题。满分100<br>分，60分及格</a>
+            </li>
+            <li>
+                <a href="#">成人高考:入学测试和分数化档。入学<br>测试计算机、数学、英语,期末考<br>试按分化档</a>
+            </li>
+            <li>
+                <a href="#">成人函授教育及电大:入学测试和科<br>目学分制。入学测试计算机、数学科<br>目满分100，60分及格</a>
+            </li>
+        </ul>
+        <div class="btn">
+            <a href="#">点击咨询</a>
+        </div>
+        <!--<img src="images/nh2.png" class="img" alt="">-->
+    </section>
+    <section class="section page4 all">
+        <h1>免费资料与题库领取</h1>
+        <h2>可向咨询老师免费申请相关资料</h2>
+        <ul>
+            <li><a href="#">四川省历年自考试题及答案分析</a></li>
+            <li><a href="#">函授教育及电大题海题库</a></li>
+            <li><a href="#">2016年学籍考生备考指导资料</a></li>
+        </ul>
+
+        <div class="btn">
+            <a href="#">点击申请资料</a>
+        </div>
+        <img src="images/nh_xf.png" class="img" alt="">
+    </section>
+    <section class="section page5 all">
+        <h1>免费资料与题库领取</h1>
+        <h2>高起专 | 高起本 | 专升本</h2>
+        <ul>
+            <li><a href="#">自考报考一对一老师预约指导</a></li>
+            <li><a href="#">函授教育一对一老师预约指导</a></li>
+            <li><a href="#">成人高考一对一老师预约指导</a></li>
+        </ul>
+        <div class="btn">
+            <a href="#">点击预约</a>
+        </div>
+        <img src="images/nh3_z.png" class="img" alt="">
+    </section>
+    <section class="section page6 all">
+        <h1>0基础学本科常见问题汇总</h1>
+        <ul>
+            <li><a class="q1" href="#">1.哪种成人学历含金量高?认可度高?</a></li>
+            <li><a class="q2" href="#">2.自考学历通过率高吗,难吗?</a></li>
+            <li><a class="q1" href="#">3.自考学费要多少钱?后期还会有其他费用吗?</a></li>
+            <li><a class="q2" href="#">4.上班族也能学吗?怎么安排时间?</a></li>
+            <li><a class="q1" href="#">5.2016年的自考报考条件是什么?</a></li>
+            <li><a class="q2" href="#">6.零基础如何拿本科</a></li>
+            <li><a class="q1" href="#">7.初中学历也可以直接考本科吗?</a></li>
+            <li><a class="q2" href="#">8.听说你们能代报名,是真的吗?</a></li>
+            <li><a class="q1" href="#">9.我要在哪上课?</a></li>
+        </ul>
+        <div class="btn">
+            <a href="#" style="margin-bottom: 3rem">免费回电解答</a>
+        </div>
+    </section>
+</section>
+    <script src="js/jquery.min.js"></script>
+
+    <script src="js/jquery.fullPage.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#fullpage").fullpage({
+                verticalCentered:false,
+                loopBottom:true,
+                loopTop:true,
+                navigation:true,
+                afterLoad:function (anchorLink ,index) {
+                    if (index === 1) {
+                        $(".page1 h1").addClass("animated fadeInDownBig");
+                        $(".page1 h2").addClass("animated fadeInDown");
+                        $(".page1 .a1").addClass("animated bounceInDown");
+                        $(".page1 .a2").addClass("animated bounceInLeft");
+                        $(".page1 .a3").addClass("animated bounceInRight");
+                        $(".page1 .a4").addClass("animated bounceInUp");
+                        $(".page1 .a5").addClass("animated bounceInUp");
+                        $(".page1 img").addClass("animated fadeInDown");
+                        $(".page1 li:nth-child(2n+1)").addClass("animated bounceInLeft");
+                        $(".page1 li:nth-child(2n)").addClass("animated bounceInRight");
+                        $(".page1 h1").css({
+                            animationDelay:"0.5s",
+                            animationDuration:"1s"
+                        });
+                        $(".page1 h2").css({
+                            animationDelay:"1s",
+                            animationDuration:"4s"
+                        });
+                        $(".page1 .a1").css({
+                            animationDelay:"1s",
+                            animationDuration:"2s"
+                        });
+                        $(".page1 .a2").css({
+                            animationDelay:"2s",
+                            animationDuration:"2s"
+                        });
+                        $(".page1 .a3").css({
+                            animationDelay:"3s",
+                            animationDuration:"2s"
+                        });
+                        $(".page1 .a4").css({
+                            animationDelay:"4s",
+                            animationDuration:"2s"
+                        });
+                        $(".page1 .a5").css({
+                            animationDelay:"5.5s",
+                            animationDuration:"1s"
+                        });
+                    }
+                    else if (index === 2) {
+                        $(".page2 h3").addClass("animated bounceInLeft");
+                        $(".page2 h2").addClass("animated fadeInDown");
+                        $(".page2 p").addClass("animated slideInDown");
+                        $(".page2 img").addClass("animated flash");
+                        $(".page2 a").addClass("animated flipInX");
+                        $(".page2 li:nth-child(2n)").addClass("animated bounceInLeft");
+                        $(".page2 h2").css({
+                            animationDuration:"2s"
+                        });
+                        $(".page2 h3").css({
+                            animationDuration:"2s"
+                        });
+                        $(".page2 p").css({
+                            animationDuration:"4s"
+                        });
+                        $(".page2 a").css({
+                            animationDelay:"1s",
+                            animationDuration:"4s"
+                        });
+                    }
+                    else if (index === 3) {
+                        $(".page3 h1").addClass("animated bounceInLeft");
+                        $(".page3 img").addClass("animated flash");
+                        $(".page3 a").addClass("animated flipInX");
+                        $(".page3 li").addClass("animated bounceInLeft");
+                        $(".page3 h1").css({
+                            animationDuration:"2s"
+                        });
+                        $(".page3 li").css({
+                            animationDuration:"4s"
+                        });
+                        $(".page3 a").css({
+                            animationDelay:"1s",
+                            animationDuration:"4s"
+                        });
+                    }
+                    else if (index === 4) {
+                        $(".page4 h1").addClass("animated bounceInLeft");
+                        $(".page4 h2").addClass("animated bounceInLeft");
+                        $(".page4 img").addClass("animated flash");
+                        $(".page4 a").addClass("animated flipInX");
+                        $(".page4 li").addClass("animated bounceInLeft");
+                        $(".page4 h1").css({
+                            animationDuration:"2s"
+                        });
+                        $(".page4 h2").css({
+                            animationDuration:"2s"
+                        });
+                        $(".page4 li").css({
+                            animationDuration:"3s"
+                        });
+                        $(".page4 a").css({
+                            animationDelay:"1s",
+                            animationDuration:"4s"
+                        });
+                    }
+                    else if (index === 5) {
+                        $(".page5 h1").addClass("animated bounceInLeft");
+                        $(".page5 h2").addClass("animated bounceInLeft");
+                        $(".page5 img").addClass("animated flash");
+                        $(".page5 a").addClass("animated flipInX");
+                        $(".page5 li").addClass("animated bounceInLeft");
+                        $(".page5 h1").css({
+                            animationDuration: "2s"
+                        });
+                        $(".page5 h2").css({
+                            animationDuration: "2s"
+                        });
+                        $(".page5 li").css({
+                            animationDuration: "3s"
+                        });
+                        $(".page5 a").css({
+                            animationDelay: "1s",
+                            animationDuration: "4s"
+                        });
+                    }
+                    else if (index === 6) {
+                            $(".page6 h1").addClass("animated bounceInLeft");
+                            $(".page6 a").addClass("animated flipInX");
+                            $(".page6 li").addClass("animated bounceInLeft");
+                            $(".page6 .q1").addClass("animated bounce");
+                            $(".page6 .q2").addClass("animated shake");
+                            $(".page6 h1").css({
+                                animationDuration:"2s"
+                            });
+                            $(".page6 h2").css({
+                                animationDuration:"2s"
+                            });
+                            $(".page6 li").css({
+                                animationDuration:"3s"
+                            });
+                            $(".page6 a").css({
+                                animationDelay:"1s",
+                                animationDuration:"4s"
+                            });
+                            $(".page6 .q1").css({
+                            animationDelay:"1s",
+                            animationDuration:"2s"
+                            });
+                            $(".page6 .q2").css({
+                            animationDelay:"2s",
+                            animationDuration:"2s"
+                            });
+                    }
+                },
+            });
+        });
+    </script>
+</body>
+</html>
